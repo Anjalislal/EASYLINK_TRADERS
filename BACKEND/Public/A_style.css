@@ -38,7 +38,7 @@ nav a {
   transition: background 0.3s ease;
 }
 nav a:hover {
-  background: rgba(255, 255, 255, 0.2); /* Highlight on hover */
+  background: rgba(255, 255, 255, 0.2);
 }
 
 /* ===== Section Styling ===== */
@@ -59,6 +59,7 @@ section h2 {
 section p,
 section li {
   font-size: 16px;
+  line-height: 1.6;
   margin-bottom: 15px;
 }
 
@@ -78,79 +79,6 @@ section li {
   transform: scale(1.05);
 }
 
-/* ===== Contact Form ===== */
-.contact-form {
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-.contact-form input,
-.contact-form textarea {
-  padding: 12px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  font-size: 16px;
-  width: 100%;
-}
-.contact-form textarea {
-  resize: vertical;
-}
-/* ===== Submit Button (special style) ===== */
-.submit-btn {
-  display: block;
-  margin: 20px auto 0;
-  background: #254d69; /* dark blue shade */
-  color: white;
-  padding: 12px 24px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background 0.3s ease, transform 0.2s ease;
-}
-
-.submit-btn:hover {
-  background: #1e3c54; /* darker blue on hover */
-  border-color: #079e73; /* border matches hover highlight */
-}
-#contactForm {
-  display: none; /* Hidden until button click */
-  margin: 20px auto 0;
-  padding: 20px;
-  border: 2px solid #087052;
-  border-radius: 8px;
-  background: #f8f8f8;
-  max-width: 400px;
-  text-align: left;
-}
-
-#contactForm label {
-  display: block;
-  margin-top: 10px;
-  font-weight: 600;
-}
-
-#contactForm input,
-#contactForm textarea {
-  width: 100%;
-  padding: 10px;
-  margin-top: 6px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 14px;
-  box-sizing: border-box;
-}
-
-#contactForm textarea {
-  resize: vertical;
-}
-
-#responseMessage {
-  text-align: center;
-  margin-top: 15px;
-  font-weight: bold;
-}
-
 /* ===== List Styling ===== */
 ul {
   list-style: none;
@@ -167,6 +95,20 @@ ul li {
 ul li:hover {
   background: #d4ecff;
 }
+
+/* ===== Services Two-Column Layout ===== */
+section ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* two columns on desktop */
+  gap: 15px;
+}
+
+@media (max-width: 768px) {
+  section ul {
+    grid-template-columns: 1fr; /* single column on mobile/tablet */
+  }
+}
+
 /* ===== Footer ===== */
 footer {
   text-align: center;
