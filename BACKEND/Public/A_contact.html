@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - EasyLink Traders LLC</title>
+  <link rel="stylesheet" href="A_style.css" />
+</head>
+<body>
+  <header>
+    <h1>EasyLink Traders LLC</h1>
+    <nav>
+      <a href="A_index.html">Home</a>
+      <a href="A_about.html">About Us</a>
+      <a href="A_services.html">Services</a>
+      <a href="A_contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section>
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:info@easylinktraders.com">info@easylinktraders.com</a></p>
+    <p>Phone: +971-542459263</p>
+    <p>Address: Dubai, UAE</p>
+
+    <!-- Send Message Button -->
+    <button id="showForm" class="button">Send Message</button>
+
+    <!-- Embedded Google Form (Initially Hidden) -->
+    <div id="googleFormContainer" style="display:none; margin-top:20px;">
+      <iframe
+        src="https://docs.google.com/forms/d/e/1FAIpQLSe9NY2WL1W_VNMK3lM05ZtQ4a9atOkfiizyU7p5h232OwT6XA/viewform?embedded=true"
+        width="100%"
+        height="700"
+        frameborder="0"
+        marginheight="0"
+        marginwidth="0"
+      >
+        Loading…
+      </iframe>
+    </div>
+  </section>
+
+  <footer>
+    &copy; <span id="year"></span> EasyLink Traders LLC. All rights reserved.
+    | Email: <a href="mailto:info@easylinktraders.com">info@easylinktraders.com</a> |
+    Phone: +971-542459263 | Dubai, UAE
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    const showFormBtn = document.getElementById('showForm');
+    const formContainer = document.getElementById('googleFormContainer');
+
+    showFormBtn.addEventListener('click', () => {
+      formContainer.style.display = 'block';
+      showFormBtn.style.display = 'none';
+      formContainer.scrollIntoView({ behavior: 'smooth' });
+    });
+  </script>
+</body>
+</html>

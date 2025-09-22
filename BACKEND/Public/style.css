@@ -1,0 +1,130 @@
+/* ===== Reset & Base Styles ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: black;
+}
+/* ===== Header & Navigation ===== */
+header {
+  background: linear-gradient(135deg, #254d69, #079e73);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+header h1 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+nav a {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+nav a:hover {
+  background: rgba(255, 255, 255, 0.2); /* light highlight on hover */
+}
+
+/* ===== Section Styling ===== */
+section {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+section h2 {
+  color: #087052;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+section p,
+section li {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* ===== Button Styling ===== */
+.button {
+  display: inline-block;
+  background: #087052;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+.button:hover {
+  background: #079e73;
+  transform: scale(1.05);
+}
+
+/* ===== List Styling ===== */
+ul {
+  list-style: none;
+  padding: 0;
+}
+ul li {
+  background: #eaf4fc;
+  margin: 10px auto;
+  padding: 10px;
+  max-width: 500px;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+ul li:hover {
+  background: #d4ecff;
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  background: #087052;
+  color: white;
+  padding: 20px;
+  margin-top: 40px;
+  font-size: 14px;
+}
+footer a {
+  color: #ffeb3b;
+  text-decoration: none;
+  font-weight: 500;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+  nav a {
+    margin: 8px;
+    padding: 6px 10px;
+  }
+  section {
+    margin: 20px;
+    padding: 15px;
+  }
+}

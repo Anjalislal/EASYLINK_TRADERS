@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us-EasyLink Traders LLC</title>
+    <link rel="stylesheet" href="A_style.css">
+</head>
+<body>
+
+<header>
+    <h1>EasyLink Traders LLC</h1>
+    <nav>
+        <a href="A_index.html">Home</a>
+        <a href="A_about.html">About Us</a>
+        <a href="A_services.html">Services</a>
+        <a href="A_contact.html">Contact</a>
+    </nav>
+</header>
+
+<section>
+    <h2>About Us</h2>
+    <p>EasyLink Traders LLC is dedicated to connecting businesses with high-quality products and services.</p>
+    <p>Our mission is to provide excellent service, integrity, and trust at every step of the trading process.</p>
+</section>
+
+<footer>
+    &copy; <span id="year"></span> EasyLink Traders LLC. All rights reserved. |
+    Email: <a href="mailto:info@easylinktraders.com">info@easylinktraders.com</a> |
+    Phone: +971-XXXXXXX | Dubai, UAE
+</footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+       // Fetch data from backend API
+      fetch('/api/message')
+        .then(response => response.json())
+        .then(data => {
+          console.log('Backend says:', data.message);
+          document.getElementById('backendMessage').textContent = data.message;
+        })
+        .catch(err => {
+          console.error('Error connecting to backend:', err);
+          document.getElementById('backendMessage').textContent = 'Unable to connect to backend';
+        });
+    </script>
+
+</body>
+</html>
