@@ -1,63 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Services- EasyLink Traders LLC</title>
-    <link rel="stylesheet" href="A_style.css" />
-  </head>
-  <body>
-    <header>
-      <h1>EasyLink Traders LLC</h1>
-      <nav>
-        <a href="A_index.html">Home</a>
-        <a href="A_about.html">About Us</a>
-        <a href="A_services.html">Services</a>
-        <a href="A_contact.html">Contact</a>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services - EasyLink Traders LLC</title>
+  <link rel="stylesheet" href="A_style.css">
+</head>
+<body>
 
-    <section>
-      <h2>Our Services</h2>
-      <ul>
-        <li>Steel Products Installation & Maintenance</li>
-        <li>Glass & Aluminum Installation & Maintenance</li>
-        <li>False Ceiling & Light Partitions Installation</li>
-        <li>Carpentry & Wood Flooring Works</li>
-        <li>Floor & Wall Tiling Works</li>
-        <li>Plumbing & Sanitary Installation</li>
-        <li>Electrical Fittings & Fixture Repairing & Maintenance</li>
-        <li>
-          Air-Conditioning, Ventilation & Air Filtration Systems Installation &
-          Maintenance
-        </li>
-        <li>Electromechanical Equipment Installation and Maintenance</li>
-        <li>Automated Car Parking Systems Installation & Maintenance</li>
-      </ul>
-      <a href="A_contact.html" class="button">Request a Quote</a>
-    </section>
+<header class="header">
+  <h1 class="fade-soft">EasyLink Traders LLC</h1>
+  <nav class="fade-soft">
+    <a href="A_index.html">Home</a>
+    <a href="A_about.html">About Us</a>
+    <a href="A_services.html">Services</a>
+    <a href="A_contact.html">Contact</a>
+  </nav>
+</header>
 
-    <footer>
-      &copy; <span id="year"></span> EasyLink Traders LLC. All rights reserved.
-      | Email:
-      <a href="mailto:info@easylinktraders.com">info@easylinktraders.com</a> |
-      Phone: +971-XXXXXXX | Dubai, UAE
-    </footer>
+<section>
+  <h2 class="reveal">Our Services</h2>
+  <ul class="service-list">
+    <li class="reveal">Steel Products Installation & Maintenance</li>
+    <li class="reveal">Glass & Aluminum Installation & Maintenance</li>
+    <li class="reveal">False Ceiling & Light Partitions Installation</li>
+    <li class="reveal">Carpentry & Wood Flooring Works</li>
+    <li class="reveal">Floor & Wall Tiling Works</li>
+    <li class="reveal">Plumbing & Sanitary Installation</li>
+    <li class="reveal">Electrical Fittings & Fixture Repairing & Maintenance</li>
+    <li class="reveal">Air-Conditioning, Ventilation & Air Filtration Systems Installation & Maintenance</li>
+    <li class="reveal">Electromechanical Equipment Installation and Maintenance</li>
+    <li class="reveal">Automated Car Parking Systems Installation & Maintenance</li>
+  </ul>
+  <a href="A_contact.html" class="button reveal">Request a Quote</a>
+</section>
 
-    <script>
-      document.getElementById("year").textContent = new Date().getFullYear();
-      // Fetch data from backend API
-      fetch("/api/message")
-        .then((response) => response.json())
-        .then((data) => {
-          console.log("Backend says:", data.message);
-          document.getElementById("backendMessage").textContent = data.message;
-        })
-        .catch((err) => {
-          console.error("Error connecting to backend:", err);
-          document.getElementById("backendMessage").textContent =
-            "Unable to connect to backend";
-        });
-    </script>
-  </body>
+<footer>
+  &copy; <span id="year"></span> EasyLink Traders LLC. All rights reserved. |
+  Email: <a href="mailto:info@easylinktraders.com">info@easylinktraders.com</a> |
+  Phone: +971-XXXXXXX | Dubai, UAE
+</footer>
+
+<script src="A_animations.js"></script>
+</body>
 </html>
