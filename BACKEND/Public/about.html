@@ -3,13 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Us-EasyLink Traders LLC</title>
+    <title>About Us -EasyLink Technical Service LLC</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    
-    <header>
-      <h1>EasyLink Traders LLC</h1>
+    <!-- Top Header: Logo + Company Name -->
+    <header class="top-header fade-soft">
+      <div class="logo-container">
+        <a href="index.html" class="logo-link">
+          <img
+            src="/EASYLINK_TRADERS/BACKEND/Images/Transparent_logo.png"
+            alt="EasyLink Traders LLC Logo"
+            class="logo"
+          />
+          <h1>EasyLink Technical Service LLC</h1>
+        </a>
+      </div>
+    </header>
+    <!-- Navigation Bar -->
+    <header class="nav-header fade-soft">
       <nav>
         <a href="index.html">Home</a>
         <a href="about.html">About Us</a>
@@ -17,7 +29,8 @@
         <a href="contact.html">Contact</a>
       </nav>
     </header>
-    <section>
+
+    <section class="reveal">
       <h2>About Us</h2>
       <p>
         EasyLink Traders LLC is dedicated to connecting businesses with
@@ -33,11 +46,9 @@
       &copy; <span id="year"></span> EasyLink Traders LLC. All rights reserved.
       | Email:
       <a href="mailto:info@easylinktraders.com">info@easylinktraders.com</a> |
-      Phone: +971-542459263| Dubai, UAE
+      Phone: +971-542459263 | Dubai, UAE
     </footer>
 
-    <script>
-      document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
+    <script src="animations.js"></script>
   </body>
 </html>

@@ -3,13 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EasyLink Traders LLC - Home</title>
+    <title>EasyLink Technical Service LLC - Home</title>
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <header>
-      <h1>EasyLink Traders LLC</h1>
+    <!-- Top Header: Logo + Company Name -->
+    <header class="top-header fade-soft">
+      <div class="logo-container">
+        <a href="index.html" class="logo-link">
+          <img
+            src="/EASYLINK_TRADERS/BACKEND/Images/Transparent_logo.png"
+            alt="EasyLink Traders LLC Logo"
+            class="logo"
+          />
+          <h1>EasyLink Technical Service LLC</h1>
+        </a>
+      </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <header class="nav-header fade-soft">
       <nav>
         <a href="index.html">Home</a>
         <a href="about.html">About Us</a>
@@ -18,24 +32,32 @@
       </nav>
     </header>
 
-    <section>
-      <h2>Welcome to EasyLink Traders LLC</h2>
-      <p>
-        Your trusted partner for quality products and services. We make trading
-        easy and reliable.
-      </p>
-      <a href="contact.html" class="button">Get in Touch</a>
+    <!-- Banner Section -->
+    <section class="banner reveal">
+      <div class="banner-content">
+        <h1>Welcome to EasyLink Traders LLC</h1>
+        <p>Your trusted partner for quality products and services.</p>
+        <a href="contact.html" class="button">Get in Touch</a>
+      </div>
     </section>
 
+    <!-- Main Content Section -->
+    <section class="reveal">
+      <h2>Our Commitments</h2>
+      <p>
+        We provide top-notch trading solutions that ensure reliability and trust
+        with every deal.
+      </p>
+    </section>
+
+    <!-- Footer -->
     <footer>
       &copy; <span id="year"></span> EasyLink Traders LLC. All rights reserved.
       | Email:
       <a href="mailto:info@easylinktraders.com">info@easylinktraders.com</a> |
-      Phone: +971-542459263| Dubai, UAE
+      Phone: +971-542459263 | Dubai, UAE
     </footer>
 
-    <script>
-      document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
+    <script src="animations.js"></script>
   </body>
 </html>
