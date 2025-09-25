@@ -36,7 +36,7 @@ body {
 
 /* ===== Header & Navigation ===== */
 .nav-header {
-  background: linear-gradient(135deg, #0077cc, #005fa3);
+  background: linear-gradient(135deg, #012e4e, #3589c5);
   text-align: center;
   position: sticky;
   top: 0;
@@ -110,19 +110,6 @@ body {
   font-size: 1.2rem;
   margin-bottom: 20px;
 }
-.banner .button {
-  font-size: 1rem;
-  padding: 12px 30px;
-  background: #0077cc;
-  border-radius: 8px;
-  color: white;
-  text-decoration: none;
-  transition: background 0.3s ease, transform 0.3s ease;
-}
-.banner .button:hover {
-  background: #005fa3;
-  transform: scale(1.05);
-}
 
 /* ===== Section Styling ===== */
 section {
@@ -135,7 +122,7 @@ section {
   text-align: center;
 }
 section h2 {
-  color: #0077cc;
+  color: #012e4e;
   margin-bottom: 20px;
   font-size: 1.8rem;
 }
@@ -185,14 +172,14 @@ section li {
 }
 .feature h3,
 .service-item h3 {
-  color: #0077cc;
+  color: #012e4e;
   margin-bottom: 10px;
 }
 
 /* ===== Button Styling ===== */
 .button {
   display: inline-block;
-  background: #0077cc;
+  background: #012e4e;
   color: white;
   padding: 12px 24px;
   border-radius: 8px;
@@ -201,7 +188,7 @@ section li {
   transition: background 0.3s ease, transform 0.2s ease;
 }
 .button:hover {
-  background: #005fa3;
+  background: #3589c5;
   transform: scale(1.05);
 }
 
@@ -225,7 +212,7 @@ ul li:hover {
 /* ===== Footer ===== */
 footer {
   text-align: center;
-  background: #0077cc;
+  background: #012e4e;
   color: white;
   padding: 20px;
   margin-top: 40px;
