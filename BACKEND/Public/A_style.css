@@ -7,7 +7,7 @@
 body {
   font-family: "Segoe UI", Arial, sans-serif;
   background: #f5f5f5;
-  color: #333;
+  color: black;
 }
 /* ===== Top Header ===== */
 .top-header {
@@ -146,89 +146,48 @@ section li {
   margin-bottom: 15px;
 }
 /* Why choose us & Services */
-.why-choose-us{
-  padding: 60px 20px;
-  text-align: center;
-  background: #f9f9f9;
-  border-radius: 12px;
-  margin-top: 40px;
-}
-
-.why-choose-us h2{
-  font-size: 2rem;
-  margin-bottom: 15px;
-}
-
-.why-choose-us p{
-  max-width: 700px;
-  margin: 0 auto 40px;
-  color: black;
-}
-
-.features{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 25px;
-}
-
-.feature{
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
-  transition: transform 0.3s ease;
-
-}
-
-.feature:hover{
-  transform: translateY(-5px);
-}
-
-/* Services */
+.why-choose-us,
 .home-services {
   padding: 60px 20px;
   text-align: center;
   margin-top: 50px;
 }
+.why-choose-us h2,
 .home-services h2 {
   font-size: 2rem;
   margin-bottom: 15px;
 }
+.why-choose-us p,
 .home-services p {
   max-width: 700px;
   margin: 0 auto 40px;
-  color: #555;
+  color: black;
 }
+.features,
 .service-preview {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 25px;
   margin-bottom: 30px;
 }
+.feature,
 .service-item {
   background: #f9f9f9;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease;
 }
+.feature:hover,
 .service-item:hover {
   transform: translateY(-5px);
   background: #fff;
 }
-.home-services .button {
-  display: inline-block;
-  padding: 12px 25px;
-  background: #0073e6;
-  color: #fff;
-  border-radius: 8px;
-  text-decoration: none;
-  transition: background 0.3s ease;
+.feature h3,
+.service-item h3 {
+  color: #0077cc;
+  margin-bottom: 10px;
 }
-.home-services .button:hover {
-  background: #005bb5;
-}
-
 
 /* ===== Button Styling ===== */
 .button {
