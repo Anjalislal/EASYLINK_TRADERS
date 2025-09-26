@@ -134,30 +134,30 @@ section li {
 }
 /* Why choose us & Services */
 .why-choose-us,
-.home-services {
+.our-services {
   padding: 60px 20px;
   text-align: center;
   margin-top: 50px;
 }
 .why-choose-us h2,
-.home-services h2 {
+.our-services h2 {
   font-size: 2rem;
   margin-bottom: 15px;
 }
 .why-choose-us p,
-.home-services p {
+.our-services p {
   max-width: 700px;
   margin: 0 auto 40px;
   color: black;
 }
-.features,
-.service-preview {
+.why-choose-us-features,
+.services {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 25px;
   margin-bottom: 30px;
 }
-.feature,
+.feature-item,
 .service-item {
   background: #f9f9f9;
   padding: 20px;
@@ -165,12 +165,12 @@ section li {
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease;
 }
-.feature:hover,
+.feature-item:hover,
 .service-item:hover {
   transform: translateY(-5px);
   background: #fff;
 }
-.feature h3,
+.feature-item h3,
 .service-item h3 {
   color: #087052;
   margin-bottom: 10px;
