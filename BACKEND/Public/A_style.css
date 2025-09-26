@@ -392,7 +392,7 @@ footer a:hover {
   opacity: 1;
   transform: scale(1);
 }
-/* ===== Responsive Design ===== */
+/* ===== Responsive Design ===== (for mobile/Tab)*/
 @media (max-width: 768px) {
   .top-header {
     flex-direction: column;
@@ -414,5 +414,16 @@ footer a:hover {
     margin: 5px 8px;          /* tighter spacing for small screens */
     padding: 6px 10px;        /* reduce padding so they fit */
     font-size: 0.9rem;        /* slightly smaller text */
+  }
+  footer {
+    font-size: 0.85rem;       /* slightly smaller text */
+    padding: 15px 10px;       /* tighter padding */
+    line-height: 1.5;         /* improve readability */
+  }
+
+  footer a {
+    display: inline-block;    /* easier to tap */
+    margin: 4px 0;            /* vertical spacing between links */
+    word-break: break-word;   /* break long email if needed */
   }
 }
